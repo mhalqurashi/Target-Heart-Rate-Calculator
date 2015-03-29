@@ -1,0 +1,82 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:useDefaultMargins="true"
+    tools:context="com.muath.target_heart_ratecalculator.MainActivity" >
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_columnSpan="2"
+        android:layout_gravity="start"
+        android:layout_row="0"
+        android:text="@string/instruction"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:text="@string/age"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/ageDisplayTextView"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|fill_horizontal|start"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="start"
+        android:padding="@dimen/textViewPadding"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <SeekBar
+        android:id="@+id/ageSeekBar"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:max="120"
+        android:progress="40" />
+
+    <TextView
+        android:id="@+id/maxRateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:text="@string/maxHeartRate"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/maxHeartRateDisplayTextView"
+        android:layout_gravity="fill_horizontal|start"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="start"
+        android:padding="@dimen/textViewPadding"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/targerHeartRateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|end"
+        android:text="@string/targerHeartRate"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/targerHeartRateDisplayTextView"
+        android:layout_gravity="fill_horizontal|start"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="start"
+        android:padding="@dimen/textViewPadding"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+</GridLayout>
