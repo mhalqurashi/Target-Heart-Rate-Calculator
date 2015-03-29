@@ -7,6 +7,6 @@
     <string name="age">Age:</string>
     <string name="instruction">To enter age, move the seek bar below.</string>
     <string name="maxHeartRate">Max Heart Rate:</string>
-    <string name="targerHeartRate">Targer Heart Rate:</string>
+    <string name="targerHeartRate">Target Heart Rate:</string>
 
 </resources>
